@@ -57,7 +57,7 @@
                                   views:@{@"previewView": _previewView}]];
     [self setupScanRect:self.view.bounds];
     self.scanner = [[MTBBarcodeScanner alloc] initWithPreviewView:_previewView];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"关闭闪光灯" style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
   [self updateFlashButton];
 }
 
